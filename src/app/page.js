@@ -11,7 +11,7 @@ export default function Home() {
   const getUsersNotificationPermission = async () => {
     const permission = await Notification.requestPermission()
     if (permission === 'granted') {
-      const token = await getToken(message, { vapidKey: 'BHldZTLzvcUTC_yGlNn3QDoiHdnV-2Y6XzpIq11Zts7nG3_9skej-8hC5TH--J_OH2j5hEacyMxRO6Ghj-b5l98' })
+      const token = await getToken(message, { vapidKey: 'YOUR_VAPID_KEY' })
       console.log('==> Permission granted token', permission, token);
     } else if (permission === 'denied') {
       alert('You have denied notificacion permission')

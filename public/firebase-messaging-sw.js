@@ -2,7 +2,7 @@ importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js');
 
 firebase.initializeApp({
-  'messagingSenderId': 'BHldZTLzvcUTC_yGlNn3QDoiHdnV-2Y6XzpIq11Zts7nG3_9skej-8hC5TH--J_OH2j5hEacyMxRO6Ghj-b5l98'
+  'messagingSenderId': 'YOUR_VAPID_KEY'
 });
 
 const messaging = firebase.messaging();
